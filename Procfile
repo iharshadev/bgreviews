@@ -1,1 +1,1 @@
-web: gunicorn bgreview.wsgi
+web: gunicorn bgreview.wsgi --log-file -
