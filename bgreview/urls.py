@@ -21,5 +21,5 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('get/', views.get),
-    path('post_test', views.post_test),
+    path('predict', views.predict),
 ]
