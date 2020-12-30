@@ -7,7 +7,11 @@ The [dataset](https://www.kaggle.com/jvanelteren/boardgamegeek-reviews) used to 
 
 
 ## How it's implenented
-At it's core, this REST serves a model that is pre-trained and pickled in the `model` directory. `scikit-learn` is used to train, tune, evaluate the model and predict rating.
+At it's core, this REST API when invoked does the following.
+
+1. Sanitize the input text from request
+2. Apply `Stemming` and `Lemmatization`to get rid of some unwanted information from the text
+3. Serves a model that is pre-trained and pickled in the `model` directory. `scikit-learn` is used to train, tune, evaluate the model and predict rating.
 
 
 ## Instructions
